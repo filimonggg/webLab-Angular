@@ -1,0 +1,20 @@
+<div class="page">
+  <p-card header="Вход" class="card">
+
+    <div class="clock">
+      Текущее время: <b>{{ (now$ | async) | date:'HH:mm:ss' }}</b>
+    </div>
+
+    <div class="field">
+      <label>Логин</label>
+      <input pInputText class="full" [(ngModel)]="login" />
+    </div>
+
+    <div class="field">
+      <label>Пароль</label>
+      <p-password class="full" [(ngModel)]="password" [feedback]="false"></p-password>
+    </div>
+
+    <p-button label="Войти" (onClick)="submit()" [loading]="loading"></p-button>
+  </p-card>
+</div>

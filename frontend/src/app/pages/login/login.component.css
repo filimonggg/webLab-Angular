@@ -1,0 +1,36 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(420px, 100%);
+  max-width: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+:host ::ng-deep .full {
+  width: 100%;
+}
+
+:host ::ng-deep .full.p-password,
+:host ::ng-deep .full.p-password .p-password-input,
+:host ::ng-deep .full.p-password input {
+  width: 100%;
+  display: block;
+}
+
+.clock {
+  margin: 0.5rem 0 1rem;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
